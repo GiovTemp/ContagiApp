@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "98399241417",
+    "firebase_url": "https://contagiapp-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "contagiapp",
+    "storage_bucket": "contagiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98399241417:android:13f18235a3b1adf724b918",
+        "android_client_info": {
+          "package_name": "it.gadg.appcontagi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98399241417-ghelc6asc9kiqo9gr4kcjtu6at279je7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.gadg.appcontagi",
+            "certificate_hash": "244fc722f833ac7ac42a004bb414d2aeb672a64f"
+          }
+        },
+        {
+          "client_id": "98399241417-i1t581u7dkpddkm1lovf6e130qb89v5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3q0W03dfeS5XwIcm2vKvafNcLqrWKyDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98399241417-i1t581u7dkpddkm1lovf6e130qb89v5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "98399241417",
+    "project_id": "contagiapp",
+    "storage_bucket": "contagiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98399241417:android:13f18235a3b1adf724b918",
+        "android_client_info": {
+          "package_name": "it.gadg.appcontagi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98399241417-i1t581u7dkpddkm1lovf6e130qb89v5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3q0W03dfeS5XwIcm2vKvafNcLqrWKyDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98399241417-i1t581u7dkpddkm1lovf6e130qb89v5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
