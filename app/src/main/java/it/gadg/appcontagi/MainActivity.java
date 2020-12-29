@@ -1,7 +1,9 @@
 package it.gadg.appcontagi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.EditText;
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     EditText rPassword;
     EditText rNome;
     EditText rCognome;
+    TextView navEmail;
+    FirebaseUser user;
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -46,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+      //INZIO CODICE AUTOGENERATO DA ANDROID
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -70,19 +76,33 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        //FINE CODICE
 
-        // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
+
+        // Inizializzo Autenticazione Firebase
+        mAuth= FirebaseAuth.getInstance();
+       //prendo i dat dell'utnete
+        user = mAuth.getCurrentUser();
+        //prendo l'header del menu ad hamburger
+        View headerView = navigationView.getHeaderView(0);
+        //cambio il testo del campo email
+        navEmail = headerView.findViewById(R.id.navEmail);
+        navEmail.setText(user.getEmail());
+
+
+
+
+
+    
+
 
     }
 
 
     @Override
     public void onStart() {
+
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
     }
 
     private void updateUI(FirebaseUser currentUser) {
@@ -199,4 +219,24 @@ public class MainActivity extends AppCompatActivity {
     private boolean passwordValida(String password){
          return password.length()>7;
     }
+
+
+
+    public void logout(MenuItem item) {
+
+        mAuth.signOut();
+        if (null == FirebaseAuth.getInstance().getCurrentUser()) {
+            Toast.makeText(getApplicationContext(), "Logout riuscito.",
+                    Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(), Splash.class);
+            startActivity(i);
+        } else {
+            Toast.makeText(getApplicationContext(), "Logout fallito.",
+                    Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+
+
 }

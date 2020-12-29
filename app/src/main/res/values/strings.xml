@@ -27,4 +27,14 @@
     <string name="email">Email</string>
     <string name="registrati">Registrati</string>
     <string name="background">Background</string>
+    <string name="immagine_prima_schermata">Immagine Prima schermata</string>
+    <string name="contagiapp">ContagiAPP</string>
+    <string name="lorem">Lorem</string>
+    <string name="ipsum">ipsum</string>
+    <string name="faketext">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</string>
+    <string name="tab">tab</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="loginSplash">Login/Register</string>
+    <string name="registrati_adesso">Registrati Adesso</string>
 </resources>
